@@ -1,0 +1,292 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0d1117;
+color:#e6edf3;
+}
+
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#161b22;
+z-index:1000;
+}
+
+.logo{
+font-weight:bold;
+color:#58a6ff;
+font-size:20px;
+}
+
+nav{
+display:flex;
+gap:25px;
+}
+
+nav a{
+color:#e6edf3;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#58a6ff;
+}
+
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:120px 8% 0;
+gap:40px;
+}
+
+.hero-left{
+flex:1;
+max-width:600px;
+}
+
+.hero-left h1{
+font-size:50px;
+color:#58a6ff;
+}
+
+.hero-left h3{
+margin:15px 0;
+color:#8b949e;
+}
+
+.hero-left p{
+margin-bottom:25px;
+line-height:1.6;
+}
+
+.hero-buttons .btn{
+padding:12px 25px;
+border-radius:6px;
+text-decoration:none;
+margin-right:10px;
+transition:0.3s;
+}
+
+.primary{
+background:#238636;
+color:white;
+}
+
+.primary:hover{
+transform:translateY(-3px);
+}
+
+.outline{
+border:1px solid #58a6ff;
+color:#58a6ff;
+}
+
+.outline:hover{
+background:#58a6ff;
+color:#0d1117;
+}
+
+
+.hero-right{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.hero-right img{
+width:320px;
+max-width:100%;
+border-radius:10px;
+}
+
+
+/* SECTION */
+
+.section{
+padding:120px 8%;
+text-align:center;
+}
+
+.section h2{
+font-size:36px;
+margin-bottom:40px;
+color:#58a6ff;
+}
+
+.card{
+background:#161b22;
+padding:40px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+
+/* SKILLS */
+
+.skills-container{
+max-width:600px;
+margin:auto;
+}
+
+.skill-box{
+margin-bottom:25px;
+text-align:left;
+}
+
+.skill-info{
+margin-bottom:8px;
+}
+
+.progress{
+background:#30363d;
+height:8px;
+border-radius:5px;
+overflow:hidden;
+}
+
+.progress-bar{
+height:100%;
+animation:load 2s ease forwards;
+}
+
+.html{width:90%;background:#e34c26;}
+.css{width:85%;background:#264de4;}
+.js{width:75%;background:#f7df1e;}
+.react{width:70%;background:#61dafb;}
+
+
+/* CONTACT */
+
+.contact p{
+margin:10px 0;
+}
+
+.contact a{
+color:#58a6ff;
+text-decoration:none;
+}
+
+.contact a:hover{
+text-decoration:underline;
+}
+
+
+/* FOOTER */
+
+footer{
+padding:20px;
+text-align:center;
+background:#161b22;
+}
+
+
+/* ANIMATION */
+
+@keyframes load{
+from{width:0;}
+}
+
+
+/* TABLET */
+
+@media (max-width:768px){
+
+header{
+flex-direction:column;
+gap:10px;
+}
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-left h1{
+font-size:36px;
+}
+
+.hero-right{
+margin-top:30px;
+}
+
+.hero-right img{
+width:260px;
+}
+
+.section{
+padding:80px 5%;
+}
+
+}
+
+
+/* MOBILE */
+
+@media (max-width:480px){
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.hero{
+padding-top:140px;
+}
+
+.hero-left h1{
+font-size:28px;
+}
+
+.hero-left p{
+font-size:14px;
+}
+
+.hero-right img{
+width:200px;
+}
+
+.hero-buttons{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.hero-buttons .btn{
+width:100%;
+text-align:center;
+}
+
+.section{
+padding:60px 5%;
+}
+
+.section h2{
+font-size:24px;
+}
+
+}
